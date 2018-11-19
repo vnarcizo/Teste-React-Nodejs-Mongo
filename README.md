@@ -15,7 +15,7 @@ npm start
 
 (client) http://localhost:3000
 
-(api) http://localhost:3000/api
+(api - products) http://localhost:3000/api/product
 
 ## BD (No configuration needed)
 
