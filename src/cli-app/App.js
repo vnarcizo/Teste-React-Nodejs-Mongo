@@ -177,7 +177,7 @@ class App extends Component{
                                         {
                                             return (
                                                 <tr key={prod._id}>
-                                                    <td style={{padding:"0px 0px",width: "37%"}}>
+                                                    <td style={{padding:"0px 0px",width: "360px"}}>
 
                                                     { 
                                                         prod.Images.map((img, index) =>
@@ -192,7 +192,7 @@ class App extends Component{
                                                         })
                                                     }
                                                     </td>
-                                                    <td><b>{prod.Name}</b>
+                                                    <td style={{padding:"0px 0px"}}><b>{prod.Name}</b>
                                                     <br/>
                                                     <span style={{color:"gray"}} >
                                                         {prod.Type} - {prod.Model}
