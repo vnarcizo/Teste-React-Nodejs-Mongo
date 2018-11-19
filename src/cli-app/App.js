@@ -18,7 +18,6 @@ class App extends Component{
 
         this.handleChange = this.handleChange.bind(this);
         this.changeSelectItensPerPage = this.changeSelectItensPerPage.bind(this);
-        this.addTask = this.addTask.bind(this);
         this.pagination = this.pagination.bind(this);
     }
 
@@ -166,32 +165,6 @@ class App extends Component{
 
                <div className="container">    
                     <div className="row">
-                        <div className="col s5" style={{display: "none"}}>
-                            <div className="card">
-                                <div className="card-content">
-                                    <form onSubmit={this.addTask}>
-                                        <div className="row">
-
-                                            <div className="input-field col s12">
-                                                <input name="title" value={this.state.title} onChange={this.handleChange} type="text" placeholder="Title"></input>
-                                            </div>
-
-                                        </div>
-
-                                         <div className="row">
-
-                                            <div className="input-field col s12">
-                                                <textarea name="description" value={this.state.description} onChange={this.handleChange} className="materialize-textarea" placeholder="Description" ></textarea>
-                                            </div>
-
-                                            </div>
-                                        <button className="btn light-blue darken-4" >
-                                            Send
-                                        </button>
-                                    </form>    
-                                </div>
-                            </div>
-                        </div>
                         <div style={{margin:"20px 0px 20px 10px",display: "table", borderBottom:"2px solid rgb(223,190,127)"}}>
                             {this.state.qtdProdutos} PRODUTOS ENCONTRADOS
                         </div>
