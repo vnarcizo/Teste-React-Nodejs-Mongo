@@ -1,6 +1,7 @@
 const express = require('express');
 const morgan = require("morgan");
 const path = require("path");
+const {mongoose} = require("../src/server-models/database");
 
 const app = express();
 
