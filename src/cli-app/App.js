@@ -245,12 +245,12 @@ class App extends Component{
                             <ul className="pagination">
 
 
-                                <li className={ this.state.pg == 1 ? "disabled white" : ""}><a href="#!" disabled={this.state.pg == 1}  onClick={()=> this.pagination(1)}><i class="fas fa-angle-double-left"></i></a></li>
-                                <li className={ this.state.pg == 1 ? "disabled white" : ""}><a href="#!" disabled={this.state.pg == 1}  onClick={()=> this.paginationNextPriors(false)}><i class="fas fa-angle-left"></i></a></li>
+                                <li className={ this.state.pg == 1 ? "disabled white" : ""}><a href="#!" disabled={this.state.pg == 1}  onClick={()=> this.pagination(1)}><i className="fas fa-angle-double-left"></i></a></li>
+                                <li className={ this.state.pg == 1 ? "disabled white" : ""}><a href="#!" disabled={this.state.pg == 1}  onClick={()=> this.paginationNextPriors(false)}><i className="fas fa-angle-left"></i></a></li>
                                 {
                                     this.state.pages.map( (item,index) => {
                                          
-                                        return (
+                                        return ( 
                                              
                                             <li key={index} className="active white" style={ this.state.pg == item ? {border: "1px solid rgb(190,190,190)"}:{}}  >
                                                  <a href="#!" style={{color: "black"}} onClick={()=> this.pagination(item)}>{item}</a>
@@ -259,8 +259,8 @@ class App extends Component{
                                     })
                                 }
                                
-                                <li className={ this.state.pg == this.state.qtdpgs ? "disabled white" : ""}><a href="#!" disabled={this.state.pg == this.state.qtdpgs} onClick={()=> this.paginationNextPriors(true)}><i class="fas fa-angle-right"></i></a></li>
-                                <li className={ this.state.pg == this.state.qtdpgs ? "disabled white" : ""}><a href="#!" disabled={this.state.pg == this.state.qtdpgs} onClick={()=> this.pagination(this.state.pages.length)}><i class="fas fa-angle-double-right"></i></a></li>
+                                <li className={ this.state.pg == this.state.qtdpgs ? "disabled white" : ""}><a href="#!" disabled={this.state.pg == this.state.qtdpgs} onClick={()=> this.paginationNextPriors(true)}><i className="fas fa-angle-right"></i></a></li>
+                                <li className={ this.state.pg == this.state.qtdpgs ? "disabled white" : ""}><a href="#!" disabled={this.state.pg == this.state.qtdpgs} onClick={()=> this.pagination(this.state.pages.length)}><i className="fas fa-angle-double-right"></i></a></li>
 
                             </ul>
                         </div>
